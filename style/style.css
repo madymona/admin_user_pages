@@ -1,0 +1,176 @@
+body {
+    font-size: .875rem;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    padding: 5px 0 0;
+}
+
+#sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+#sidebar .nav-link:hover {
+    color: #007bff;
+}
+
+#sidebar .nav-item {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+.navbar {
+    position: sticky;
+    top: 0; 
+       
+}
+
+#sidebar .logo {
+    text-align: center;
+}
+
+#sidebar .logo img {
+    max-width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sidebar .profile-picture {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#sidebar .profile-picture img {
+    max-width: 80px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.navbar .navbar-brand img {
+    max-width: 30px; 
+    height: auto;
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+
+.card {
+    margin: 10px 0;
+}
+.card-title {
+    font-size: 1.2em;
+}
+.card-icon {
+    font-size: 2em;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chart-container, .earnings-container {
+    width: 48%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 300px;
+    padding: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.bar {
+    width: 40px;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.bar:hover {
+    background-color: #45a049;
+}
+
+.bar::after {
+    content: attr(data-value);
+    position: absolute;
+    top: -25px;
+    width: 100%;
+    left: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.label {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.earnings-card {
+    background: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.earnings-card h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #00796b;
+}
+
+.earnings-card p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #004d40;
+}
+
+.earnings-card .change {
+    font-size: 1em;
+    color: #d32f2f;
+}
+
+
+footer {
+   
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color:#e3f2fd;
+    color:#333;;
+}
+
